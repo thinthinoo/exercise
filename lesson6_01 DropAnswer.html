@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lesson6_01</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" >
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" >
+        
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" ></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" ></script>
+        
+        
+    </title>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-sm bg-dark">
+            <div class="container">
+                <a class="navbar-brand">
+                     
+                    <h1>AnyCall</h1>
+                </a>
+               
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#mymenu">
+                    <span class="navbar-toggler-icon" ></span>
+                   
+                </button>
+                <div class="collapse navbar-collapse justify-content-end"  id="mymenu">
+                    <ul class="navbar-nav">
+                       <li class="nav-item"> 
+                            <a class="nav-link" href="#"> About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="modal" href="#mymodal">Sign</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Profolio</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item">Profolio1</a></li>
+                                <li><a class="dropdown-item">Profolio2</a></li>
+                                <li><a class="dropdown-item">Profolio3</a></li>
+                            </ul>
+                        </li> 
+                        
+                    </ul>
+                </div>
+                
+            </div>
+        </nav>
+        <div class="carousel slide" data-bs-ride="carousel" id="phslider">
+            <ol class="carousel-indicators">
+                <li data-bs-target="#phslider" data-bs-slide-to="0" active></li>
+                <li data-bs-target="#phslider" data-bs-slide-to="1"></li>
+                <li data-bs-target="#phslider" data-bs-slide-to="2"></li>
+                
+            </ol>
+            <div class="carousel-inner">
+
+                <div class="carousel-item active">
+                    <img src="phslider1.jpg" class="d-block w-100 h-200" >
+
+                </div>
+                <div class="carousel-item">
+                    <img src="phslider2.jpg" class="d-block w-100 h-200" >
+                </div>
+                <div class="carousel-item ">
+                    <img src="phslider3.jpg" class="d-block w-100 h-200" >
+                </div>
+                
+            </div>
+
+<!-- left right icon -->
+            <a class="carousel-control-prev" href="#phslider" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#phslider" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+
+       <div class="container my-5">
+           <div class="row">
+              <div class="col-md-6">
+                <div class="accordion" id="parent">
+                  <div class="accordion-item">
+                    <h class="accordion-header bg-primary">
+                       <!-- <a href="3myaccordion" class="accordion-button" data-bs-toggle="collapse">Vision</a> --> 
+
+                       <button class="accordion-button collapsed bg-primary text-light" data-bs-toggle="collapse" data-bs-target="#myaccordion1">vision</button>
+                    </h>
+                    <div class="collapse accordion-collapse" id="myaccordion1" data-bs-parent="#parent">
+                        <div class="accordion-body">
+                           <p>This is paragraph</p> 
+                        </div>
+                    </div>
+                      
+                  </div>
+                  <div class="accordion-item">
+                    <h class="accordion-header bg-primary">
+                       <!-- <a href="3myaccordion" class="accordion-button" data-bs-toggle="collapse">Vision</a> --> 
+
+                       <button class="accordion-button collapsed bg-primary text-light" data-bs-toggle="collapse" data-bs-target="#myaccordion2">Mission</button>
+                    </h>
+                    <div class="collapse accordion-collapse" id="myaccordion2" data-bs-parent="#parent">
+                        <div class="accordion-body">
+                           <p>This is paragraph</p> 
+                        </div>
+                    </div>
+                      
+                  </div>
+                 
+                </div>  
+              </div> 
+           </div>
+       </div>
+    </body>
+</html>
